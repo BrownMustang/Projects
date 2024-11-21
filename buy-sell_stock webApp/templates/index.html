@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <h2>Hello!, {{name}} here is your portfolio</h2>
+    <table>
+        <tr>
+            <td>Stock symbol</td>
+            <td>Shares owned</td>
+            <td>Current price</td>
+            <td>Value of the holding</td>
+        </tr>
+        {% for stock in portfolio %}
+            <tr>
+                <td>{{ stock.symbol }}</td>
+                <td>{{ stock.shares }}</td>
+                <td>{{ usd(stock.current_price) }}</td>
+                <td>{{ usd(stock.value) }}</td>
+                <td><form action="/buy" method="post">
+                    <input type="hidden" name="symbol" value="{{ stock.symbol }}">
+                    <input type="hidden" name="shares" value="1">
+                    <button class="btn btn-primary" type="submit" name = "buy">Buy 1 share</button>
+                </form></td>
+                <td><form action="/sell" method="post">
+                    <input type="hidden" name="symbol" value="{{ stock.symbol }}">
+                    <input type="hidden" name="shares" value="1">
+                    <button class="btn btn-primary" type="submit" name = "sell">Sell 1 share</button>
+                </form></td>
+
+            </tr>
+        {% endfor %}
+    </table>
+
+    <h4>Stocks total value: {{usd(total_value)}}</h3>
+    <h4>Cash remaining: {{usd(cash)}}</h3>
+    <h4>Grand total: {{usd(grand_total)}}</h3>
+{% endblock %}

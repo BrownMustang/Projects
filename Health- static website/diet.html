@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script src="interactive.js"></script>
+        <title>Diet</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="sleep.html">Sleep</a>
+            <a class="nav-link" href="diet.html">Diet</a>
+            <a class="nav-link" href="exercise.html">Exercise</a>
+          </nav>
+
+          <p class = "details">We are what we eat not just metaphorically but literally as well.</p>
+          <img src="images/diet.png" id="fitness1">
+
+          <p class = "details">A balanced diet is vital for overall health, providing essential nutrients for optimal bodily function, strong immunity, and disease prevention. It supports growth, boosts energy, enhances mood, and improves cognitive function, contributing to a higher quality of life.</p>
+          <ul class = "points">
+            <li>A balanced diet provides steady energy, helping to maintain stamina and vitality for daily activities and regular physical exercise.</li>
+            <li>Adequate protein and nutrients from a balanced diet support muscle maintenance and repair, preventing fatigue and reducing injury risk, enabling consistent daily activity.</li>
+          </ul>
+          <h4 class = "headings" style = "text-align:center;":>Know your proper macro nutrient distribution here:</h4>
+          <form id="myForm">
+            <label for="height" class = "formtxt">Height in cm:</label><br>
+            <input type="number" id="height" name="height"><br><br>
+            <label for="weight" class = "formtxt">Weight in Kg:</label><br>
+            <input type="number" id="weight" name="weight"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+          <br>
+          <br>
+          <p id = "bmr" class = "metrics"></p>
+          <p id = "protien" class = "metrics"></p>
+          <p id = "fats" class = "metrics"></p>
+          <p id = "carbs" class = "metrics"></p>
+    </body>
+    <script src="interactive.js"></script>
+</html>

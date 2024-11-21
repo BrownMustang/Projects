@@ -1,0 +1,133 @@
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.alltext {
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+.nav .nav-link {
+    color: white !important;
+    font-size: 20px;
+    font-family:'Trebuchet MS', sans-serif;
+}
+
+.nav-link:hover {
+    color:gray !important;
+    font-size: 22px;
+}
+.spinner-border {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    font-size: 14px;
+  }
+.intro {
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+#help {
+    position:fixed;
+    color: white;
+    font-family: 'Courier New', monospace;
+    bottom: 30px;
+    left: 20px;
+    font-size: 16px;
+}
+#fitness1 {
+    height: 400px;
+    float: right;
+}
+.details {
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: left;
+    padding-left:20px;
+    font-size: 20px;
+    padding-top: 20px;
+    text-indent: 50px;
+}
+.headings {
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: left;
+    padding-left:20px;
+}
+#sleep1 {
+    height: 350px;
+    float: left;
+}
+.points {
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: left;
+    padding-left:20px;
+    font-size: 20px;
+}
+.accordion-item {
+    background-color: transparent !important;
+    color: white;
+    font-family: 'Courier New', monospace;
+}
+.accordion-button {
+    background-color: transparent !important;
+    color: white;
+    font-family: 'Courier New', monospace;
+}
+table {
+    color: white;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+td {
+    width: 400px;
+    height: 100px;
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+
+}
+#exercise {
+    height: 250px;
+    float: right;
+}
+
+#myForm {
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 40px;
+  float: left;
+  margin-righr:40px;
+}
+.formtxt {
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+}
+
+.metrics {
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    padding-left:40px;
+}

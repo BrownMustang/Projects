@@ -1,0 +1,21 @@
+Few of the HTML tags used:
+1. head
+2. title
+3. body
+4. form
+5. table
+6. script
+7. footer
+8. input
+9. p
+10. body
+
+Few of the CSS properties used:
+1.  footer
+2.  #help
+3. .details
+4. .points
+5. #myForm
+
+Bootstrap is used to integrate few components and JavaScript is used calculate and print output based on the user input.
+
